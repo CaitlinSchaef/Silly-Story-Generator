@@ -1,5 +1,8 @@
 <style>
-      body {
+html {
+  background-color: #9AAFC2;
+}      
+body {
         font-family: helvetica, sans-serif;
         width: 350px;
             background-color: #9AAFC2;
@@ -30,5 +33,5 @@ main, header, nav, article, aside, footer, section {
         padding: 10px;
         visibility: hidden;
       }
-      
+
 </style>
