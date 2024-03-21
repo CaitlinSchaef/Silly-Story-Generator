@@ -25,6 +25,12 @@ randomize.addEventListener('click', result);
 function result() {
   let newStory = $storyText
 
+const ItemX = randomValueFromArray($insertX)
+const ItemY = randomValueFromArray($insertY)
+const ItemZ = randomValueFromArray($insertZ)
+
+
+
   if(customName.value !== '') {
     const name = customName.value;
 new story =
@@ -36,7 +42,7 @@ new story =
 
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
 
