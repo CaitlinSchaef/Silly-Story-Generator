@@ -1,1 +1,11 @@
 Main CSS
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+font: helvetica 
+}
+
+main, header, nav, article, aside, footer, section {
+  background: #9AAFC2
+  padding: 0;
+}
