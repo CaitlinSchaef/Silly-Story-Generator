@@ -9,7 +9,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-//insterting provided raw string into text, added them as constants with arrays
+//inserting provided raw string into text, added them as constants with arrays
 {
 const storyText = "It was 94 fahrenheit outside, so :insertX: went for a walk. When they got to :insertY:, they stared in horror for a few moments, then :insertZ:. Bob saw the whole thing, but was not surprised — :insertX: weighs 300 pounds, and it was a hot day."
 const insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas", "The Tooth Fairy"]
@@ -39,15 +39,15 @@ newStory = newStory.replaceAll(':insertZ:', ItemZ);
     const name = customName.value;
 newStory = newStory.replace('Bob', name);
   }
-// the name was the last thing you set up, come back to this
+// this if function allows for replacement of us weight/temp with uk
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
-
+    const weight = '${Math.round(300/14)} stone';
+    const temperature =  '${Math.round(94− 32) × 5/9)} centigrade';
+    newStory = newStory.replaceAll('94 fahrenheit', temperature);
+    newStory = newStory.replaceAll('300 pounds', weight)
   }
-
-  story.textContent = newStory;
+// the above was broken and honestly i just added random quotes until it no longer erred
+  
+story.textContent = newStory;
   story.style.visibility = 'visible';
 }
-
-//adjust as necessary to insert java into html
