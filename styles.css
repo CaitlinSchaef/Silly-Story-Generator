@@ -6,7 +6,6 @@ body {
         font-family: helvetica, sans-serif;
         width: 350px;
             background-color: #9AAFC2;
-        font: #FFFFFF;
 }
 
 main, header, nav, article, aside, footer, section {
@@ -29,7 +28,7 @@ main, header, nav, article, aside, footer, section {
 
       p {
         background-color: #9AAFC2;
-        font: #FFFFFF;
+        color: #FFFFFF;
         padding: 10px;
         visibility: hidden;
       }
