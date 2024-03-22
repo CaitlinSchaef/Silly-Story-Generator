@@ -46,7 +46,7 @@ newStory = newStory.replaceAll('Bob', name);
     newStory = newStory.replaceAll('94 fahrenheit', temperature);
     newStory = newStory.replaceAll('300 pounds', weight);
   }
-// the above was broken and honestly i just added random quotes until it no longer erred
+// If the code is still broken you can change it to Let statements
   
 story.textContent = newStory;
   story.style.visibility = 'visible';
