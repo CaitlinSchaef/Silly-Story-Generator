@@ -41,11 +41,12 @@ newStory = newStory.replaceAll('Bob', name);
   }
 // this if function allows for replacement of us weight/temp with uk
   if(document.getElementById("uk").checked) {
-    const weight = '${Math.round(300/14)} stone';
-    const temperature =  '${Math.round(94− 32) × 5/9)} centigrade';
-    newStory = newStory.replaceAll('94 fahrenheit', temperature);
+    const weight = `${Math.round(300/14)} stone`;
+    // const temperature = `${Math.round((94 − 32) * 5/9)} centigrade`;
+    // newStory = newStory.replaceAll('94 fahrenheit', temperature);
     newStory = newStory.replaceAll('300 pounds', weight);
   }
+
 // If the code is still broken you can change it to Let statements
   
 story.textContent = newStory;
